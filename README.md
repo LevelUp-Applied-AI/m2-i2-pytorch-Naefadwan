@@ -19,3 +19,31 @@ pip install torch --index-url https://download.pytorch.org/whl/cpu
 **Branch:** `integration-2/pytorch`
 
 **Submit:** PR URL → TalentLMS Unit 8 text field
+# PyTorch Housing Price Prediction
+
+## What the Model Predicts
+The model predicts apartment prices in Jordan (price_jod).
+
+Input features:
+- area_sqm
+- bedrooms
+- floor
+- age_years
+- distance_to_center_km
+
+## Training Configuration
+- Epochs: 100
+- Optimizer: Adam
+- Learning Rate: 0.01
+- Loss Function: Mean Squared Error (MSE)
+
+## Training Outcome
+The loss decreased consistently during training.
+
+Example:
+- Epoch 0 Loss: ~ very high
+- Epoch 50 Loss: significantly lower
+- Epoch 100 Loss: much lower
+
+## Observation
+Loss decreased rapidly in the first few epochs, then gradually stabilized, indicating the model learned the main patterns early.
